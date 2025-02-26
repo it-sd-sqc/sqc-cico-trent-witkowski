@@ -42,7 +42,9 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null) {
-        super.insertString(fb, offset, stringToAdd, attr);
+        if(!stringToAdd.matches("[^0-9]")) {
+          super.insertString(fb, offset, stringToAdd, attr);
+        }
       }
       else {
         Toolkit.getDefaultToolkit().beep();
@@ -54,7 +56,9 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null) {
-        super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
+        if(!stringToAdd.matches("[^0-9]")) {
+          super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
+        }
       }
       else {
         Toolkit.getDefaultToolkit().beep();
