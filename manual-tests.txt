@@ -62,3 +62,11 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * Should display "Developer" for the user name.
 
 
+## Module 4: Validating Input to Only allow numerical values
+
+## Test Steps
+1. Build and run CiCo.
+2. Enter abcd?.
+
+## Expected results
+* There should not be anything in the input field
