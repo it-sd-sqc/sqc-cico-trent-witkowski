@@ -74,8 +74,9 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 ## Test Steps
 1. Build and run CiCo.
-2. Type 00000000 and press Enter
-3. Click the 'Next' button
+2. Type 00000000
+3. Click 'Update' button
+4. Click the 'Next' button
 
 ## Expected results
 * Main screen should now be displayed

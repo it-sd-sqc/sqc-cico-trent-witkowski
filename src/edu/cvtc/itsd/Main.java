@@ -289,6 +289,12 @@ public class Main {
     labelState.setForeground(Color.magenta);
     panelStatus.add(labelState);
 
+    JButton nextButton = new JButton("Next");
+    nextButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    nextButton.addActionListener(new Handler());
+    nextButton.setForeground(Color.blue);
+    panelStatus.add(nextButton);
+    
     panelStatus.add(Box.createVerticalGlue());
 
     // Error panel ////////////////////////////////////////////////////////////
